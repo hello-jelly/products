@@ -38,41 +38,22 @@ const gnome = {
     cost: 20.00
 };
 
-// const greenApple = {
-//     code: 'green-apple',
-//     name: 'Green Apple',
-//     image: 'assets/green-apple.jpg',
-//     description: 'What granny made pies from',
-//     category: 'tree-fruit',
-//     price: 1.34,
-//     cost: .34
-// };
-
-// const mango = {
-//     code: 'mango',
-//     name: 'Mango',
-//     image: 'assets/mango.png',
-//     description: 'Rhymes with tango',
-//     category: 'In everything these days',
-//     price: 7.50,
-//     cost: .12
-// };
-
-// const orange = {
-//     code: 'orange',
-//     name: 'Orange',
-//     image: 'assets/orange.png',
-//     description: 'Please peel before eating',
-//     category: 'tree-fruit',
-//     price: .76,
-//     cost: .75
-// };
+const tab = {
+    code: 'tab',
+    name: 'Tab',
+    image: 'assets/tab.png',
+    description: 'A couple cans of Tab',
+    category: 'other',
+    price: 8.00,
+    cost: 1.00
+};
 
 const items = [
     lamp,
     quilt,
     shirt,
     gnome,
+    tab,
 ];
 
 export default items;
