@@ -1,0 +1,26 @@
+html {
+    background-image: url('../assets/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+header {
+    text-align: center;
+    background-color: tan;
+    background: rgba(196, 160, 120, 0.6);
+}
+
+#logo {
+    height: 300px;
+    padding: 1.25rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3rem;
+    text-align: center;
+}

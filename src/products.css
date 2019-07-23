@@ -1,0 +1,36 @@
+#items {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#items li {
+    list-style: none;
+    position: relative;
+    text-align: center;
+    transition: transform 200ms ease-in-out;
+}
+
+#items li:hover {
+    box-shadow: 2px 2px 3px;
+    transform: translate3d(-1px, -1px, 0);
+}
+
+#price {
+    margin-bottom: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.price button {
+    transition: color 200ms ease-in-out;
+}
+
+.price button:hover {
+    background: #aaa;
+    color: white;
+}
