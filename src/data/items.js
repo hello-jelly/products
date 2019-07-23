@@ -48,12 +48,23 @@ const tab = {
     cost: 1.00
 };
 
+const plaque = {
+    code: 'plaque',
+    name: 'Plaque',
+    image: 'assets/plaque.png',
+    description: 'This adorable plaque for your kitchen wall',
+    category: 'other',
+    price: 12.00,
+    cost: 1.00
+};
+
 const items = [
     lamp,
     quilt,
     shirt,
     gnome,
     tab,
+    plaque,
 ];
 
 export default items;

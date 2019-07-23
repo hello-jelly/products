@@ -2,21 +2,21 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 1.5rem;
 }
 
 #items li {
     background-color: whitesmoke;
     border-radius: 10%;
-    height: 375px;
+    height: 350px;
     list-style: none;
     position: relative;
     text-align: center;
     transition: transform 200ms ease-in-out;
-    width: 275px;
+    width: 250px;
+    margin: 10px;
 }
 li img {
-    width: 250px;
+    width: 225px;
 }
 
 #items li:hover {

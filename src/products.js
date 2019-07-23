@@ -1,5 +1,5 @@
 import items from './data/items.js';
-import renderItem from './src/render-item.js';
+import renderItem from '/src/render-item.js';
 
 const list = document.getElementById('items');
 
