@@ -41,6 +41,10 @@ li img {
     right: 0;
 }
 
+button {
+    margin-left: 8px;
+}
+
 .price button {
     background-color: lightblue;
     transition: color 200ms ease-in-out;
