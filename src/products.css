@@ -14,13 +14,20 @@
     transition: transform 200ms ease-in-out;
     width: 250px;
     margin: 10px;
+    box-shadow: 3px 3px 4px darkgray;
+
 }
+
+li {
+    text-align: center;
+}
+
 li img {
     width: 225px;
 }
 
 #items li:hover {
-    box-shadow: 2px 2px 3px;
+    box-shadow: 4px 4px 4px gray;
     transform: translate3d(-1px, -1px, 0);
 }
 
@@ -45,4 +52,8 @@ li img {
 .price button:hover {
     background: #aaa;
     color: white;
+}
+
+ul {
+    justify-content: center;
 }
