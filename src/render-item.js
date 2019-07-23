@@ -9,12 +9,12 @@ function renderItem(item) {
         
     const img = document.createElement('img');
     img.src = item.image;
-    img.alt = item.name + ' image';
+    img.alt = item.name + ' Image';
     li.appendChild(img);
 
     const p = document.createElement('p');
     p.className = 'price';
-    p.textContent = '$' + item.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    p.textContent = item.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
     const button = document.createElement('button');
     button.textContent = 'Add';
     button.value = item.code;
