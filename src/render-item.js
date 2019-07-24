@@ -1,4 +1,5 @@
 import { toUSD } from './format.js'; 
+// import store from './data/store.js';
 
 function renderItem(item) {
     const li = document.createElement('li');
@@ -20,6 +21,10 @@ function renderItem(item) {
     const button = document.createElement('button');
     button.textContent = 'Add';
     button.value = item.code;
+    // button addEventListener('click', () => {
+    //     store.orderProduct(item.code);
+    //     }
+    // }
     p.appendChild(button);
         
     li.appendChild(p);

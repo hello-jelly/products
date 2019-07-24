@@ -6,9 +6,11 @@ import { toUSD } from './format.js';
 
 const tbody = document.querySelector('tbody');
 
+const shoppingCart = store.getShoppingCart();
+
 for(let i = 0; i < cart.length; i++) {
     const lineItem = cart[i];
-    const item = findProduct(items, lineItem.code);
+    const item = store.getProduct(lineItem.code);
     const dom = renderLineItem(lineItem, item);
 
     tbody.appendChild(dom);
