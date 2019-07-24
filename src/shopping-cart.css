@@ -1,7 +1,7 @@
 table {
     border-collapse: collapse;
     margin: 20px auto;    
-    width: 80%;
+    width: 60%;
 }
 
 tbody {
@@ -23,16 +23,20 @@ table th, table td {
 
 table th, table td {
     text-align: right;
-    padding: 10px;
+    padding: 15px;
 }
 
 thead tbody td {
-    padding: 10px;
+    padding: 15px;
 }
 
 
 tbody tr:nth-child(even) {
     background: #eee
+}
+
+.line-item-total {
+    font-weight: bolder;
 }
 
 tfoot {
@@ -43,7 +47,6 @@ tfoot {
 
 button {
     background-color: lightblue;
-    border-radius: 10%;
     box-shadow: 3px 3px 4px darkgray;
     font-family: 'Signika', sans-serif;
     font-size: 1.5rem;
@@ -56,6 +59,3 @@ button:hover {
     box-shadow: 4px 4px 4px gray;
     transform: translate3d(-1px, -1px, 0);
 }
-
-/* add a class to the total row <td class="total-row">
-font-weight: bolder; */

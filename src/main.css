@@ -8,7 +8,9 @@ header {
     background-color: tan;
     background: rgba(196, 160, 120, 0.6);
     padding: 1.5rem;
+    margin-left: -8px;
     text-align: center;
+    width: 100vw;
 }
 
 img #logo {
