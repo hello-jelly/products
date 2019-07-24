@@ -9,7 +9,7 @@ export function findProduct(items, code) {
 }
     
 export function getLineTotal(quantity, price) {
-    return Math.round(quantity * price * 100) / 100;
+    return quantity * price;
 }
 
 export function getOrderTotal(cart, items) {
