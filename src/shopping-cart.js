@@ -1,18 +1,19 @@
-import order from './data/order.js';
+import cart from './data/order.js';
 import items from './data/items.js';
-import { findProduct } from './register.js';
+import { findProduct, getOrderTotal } from './register.js';
 import renderLineItem from './render-line-item.js';
+import { toUSD } from './format.js';
 
 const tbody = document.querySelector('tbody');
 
-for(let i = 0; i < order.length; i++) {
-    const lineItem = order[i];
+for(let i = 0; i < cart.length; i++) {
+    const lineItem = cart[i];
     const item = findProduct(items, lineItem.code);
     const dom = renderLineItem(lineItem, item);
 
     tbody.appendChild(dom);
 }
 
-// calc order total
-
-// assign to total cell
+const orderTotalCell = document.getElementById('order-total-cell');
+const grandTotal = getOrderTotal(cart, items);
+orderTotalCell.innerText = toUSD(grandTotal);

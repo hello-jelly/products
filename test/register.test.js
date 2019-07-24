@@ -35,11 +35,3 @@ test('calculate order total', (assert) => {
     const orderTotal = getOrderTotal(order, items);
     assert.equal(orderTotal, expected);
 });
-
-// const code = 'lamp';
-// const shirt = { code: 'shirt' };
-// const gnome = { code: 'gnome' };
-// const expected = 'Lamp';
-
-// const foundProduct = findProduct(items, code);
-// foundProduct.name, expected

@@ -1,6 +1,6 @@
 table {
     border-collapse: collapse;
-    margin-top: 20px;    
+    margin: 20px auto;    
     width: 80%;
 }
 
@@ -33,6 +33,12 @@ thead tbody td {
 
 tbody tr:nth-child(even) {
     background: #eee
+}
+
+tfoot {
+    background: black;
+    color: white;
+    font-size: 1.5rem;
 }
 
 button {
