@@ -4,6 +4,16 @@ html {
     background-size: cover;
 }
 
+nav {
+    margin-bottom: 15px;
+}
+
+nav a {
+    justify-content: space-between;
+    padding: 2rem;
+    text-align: center;
+}
+
 header {
     background-color: tan;
     background: rgba(196, 160, 120, 0.6);
