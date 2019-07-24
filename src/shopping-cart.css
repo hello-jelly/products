@@ -1,0 +1,55 @@
+table {
+    border-collapse: collapse;
+    margin-top: 20px;    
+    width: 80%;
+}
+
+tbody {
+    background: whitesmoke;
+}
+
+thead {
+    background: black;
+    color: white;
+}
+
+.align left{
+    text-align: left;
+}
+
+table th, table td {
+    text-align: left;
+}
+
+table th, table td {
+    text-align: right;
+    padding: 10px;
+}
+
+thead tbody td {
+    padding: 10px;
+}
+
+
+tbody tr:nth-child(even) {
+    background: #eee
+}
+
+button {
+    background-color: lightblue;
+    border-radius: 10%;
+    box-shadow: 3px 3px 4px darkgray;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.5rem;
+    height: 50px;
+    transition: color 200ms ease-in-out;
+    width: 150px;
+}
+
+button:hover {
+    box-shadow: 4px 4px 4px gray;
+    transform: translate3d(-1px, -1px, 0);
+}
+
+/* add a class to the total row <td class="total-row">
+font-weight: bolder; */

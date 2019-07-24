@@ -7,15 +7,14 @@
 #items li {
     background-color: whitesmoke;
     border-radius: 10%;
+    box-shadow: 3px 3px 4px darkgray;
     height: 350px;
     list-style: none;
+    margin: 10px;
     position: relative;
     text-align: center;
     transition: transform 200ms ease-in-out;
     width: 250px;
-    margin: 10px;
-    box-shadow: 3px 3px 4px darkgray;
-
 }
 
 li {

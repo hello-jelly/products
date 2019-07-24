@@ -1,3 +1,5 @@
+import { toUSD } from './format.js'; 
+
 function renderItem(item) {
     const li = document.createElement('li');
     li.className = item.code;
@@ -14,7 +16,7 @@ function renderItem(item) {
 
     const p = document.createElement('p');
     p.className = 'price';
-    p.textContent = item.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    p.textContent = toUSD(item.price);
     const button = document.createElement('button');
     button.textContent = 'Add';
     button.value = item.code;
