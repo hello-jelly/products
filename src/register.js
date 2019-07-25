@@ -1,4 +1,4 @@
-// import store from './data/store.js';
+import store from './data/store.js';
 
 export function findProduct(items, code) {
     for(let i = 0; i < items.length; i++) {
@@ -14,7 +14,7 @@ export function getLineTotal(quantity, price) {
     return quantity * price;
 }
 
-export function getOrderTotal(cart, items) {
+export function getOrderTotal(cart) {
     //start an order total
     let totalOrder = 0;
 
@@ -23,7 +23,7 @@ export function getOrderTotal(cart, items) {
         //set our cart item
         const cartItem = cart[i];
         //find the product related to the line
-        const product = findProduct(items, cartItem.code);
+        const product = store.getProduct(cartItem.code);
         //get the line total based on quantity and product price
         const lineTotal = getLineTotal(cartItem.quantity, product.price);
 
