@@ -1,8 +1,8 @@
 import items from './items.js';
-import {findProduct } from '../register.js';
+import { findProduct } from '../register.js';
 
-const productKey = 'products';
-const shoppingKey = 'shopping-cart';
+const PRODUCT_KEY = 'products';
+const SHOPPING_CART_KEY = 'shopping-cart';
 
 const store = {
     storage: window.localStorage,
@@ -16,9 +16,9 @@ const store = {
         return item;
     },
     getProducts() {
-        let products = store.get(productKey);
+        let products = store.get(PRODUCT_KEY);
         if(!products) {
-            store.save(productKey, items);
+            store.save(PRODUCT_KEY, items);
             products = items;
         }
         return products;
@@ -29,25 +29,25 @@ const store = {
         return product;
     },
     getShoppingCart() {
-        let shoppingCart = store.get(shoppingKey);
-        if(!shoppingCart) = [];
-    }
-    return shoppingCart;
-},
-orderProduct(code) {
-    const shoppingCart = store.getShoppingCart();
-    const lineItem = findProduct(shoppingCart, code);
-    if(lineItem) {
-        lineItemItem.quantity++;
-    } else {
-        const lineItem = {
-            code: code,
-            quantity: 1
-        };
-        shoppingCart.push(lineItem);
-
+        let shoppingCart = store.get(SHOPPING_CART_KEY);
+        if(!shoppingCart) {
+            shoppingCart = [];
         }
-        store.save(shoppingKey, shoppingCart);
+        return shoppingCart;
+    },
+    orderProduct(code) {
+        const shoppingCart = store.getShoppingCart();
+        const lineItem = findProduct(shoppingCart, code);
+        if(lineItem) {
+            lineItem.quantity++;
+        } else {
+            const lineItem = {
+                code: code,
+                quantity: 1
+            };
+            shoppingCart.push(lineItem);
+        }
+        store.save(SHOPPING_CART_KEY, shoppingCart);
     }
 };
 
