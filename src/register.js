@@ -1,3 +1,5 @@
+// import store from './data/store.js';
+
 export function findProduct(items, code) {
     for(let i = 0; i < items.length; i++) {
         const item = items[i];

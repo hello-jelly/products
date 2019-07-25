@@ -48,7 +48,8 @@ const store = {
             shoppingCart.push(lineItem);
         }
         store.save(SHOPPING_CART_KEY, shoppingCart);
-    }
+    },
+    
 };
 
 export default store;
