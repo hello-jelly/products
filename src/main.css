@@ -1,0 +1,46 @@
+html {
+    background-image: url('../assets/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    margin-bottom: 15px;
+}
+
+nav a {
+    justify-content: space-between;
+    padding: 2rem;
+    text-align: center;
+}
+
+header {
+    background-color: tan;
+    background: rgba(196, 160, 120, 0.6);
+    padding: 1.5rem;
+    margin-left: -8px;
+    text-align: center;
+    width: 100vw;
+}
+
+img #logo {
+    height: 250px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Signika', sans-serif;
+}
+
+h3 {
+    font-family: 'signika', sans-serif;
+}
