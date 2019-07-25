@@ -8,7 +8,7 @@ function renderLineItem(lineItem, item) {
     nameCell.className = 'align-left';
     nameCell.textContent = item.name;
     tr.appendChild(nameCell);
-
+    
     const quantityCell = document.createElement('td');
     quantityCell.textContent = lineItem.quantity;
     tr.appendChild(quantityCell);
