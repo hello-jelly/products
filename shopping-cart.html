@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout</title>        
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/shopping-cart.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Poppins|Raleway|Signika&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <a class="user-use" href="./">Home</a>
+        <a id="space" class="user-use" href="products.html">Store</a>
+        <a href="product-entry.html">Item Form</a>
+        <a href="sales.html">Sales Reports</a>
+        <a id="cart" href="shopping-cart.html"><img id="cart-img" src="assets/cart.png"><span id="count">0</span></a>
+    </nav>
+    <header>
+        <h1><img id="logo" src="assets/logo.png" alt="Logo Image"></h1>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="item">Item</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>Grand Total:</th>
+                    <th id="order-total-cell"></th>
+                    <th></th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p class="order-now-container">
+            <button class="place-button">Place Order</button>
+        </p>
+    </main>
+
+    <script src="src/shopping-cart.js" type="module"></script>
+</body>
+</html>
