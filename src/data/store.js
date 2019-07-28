@@ -53,7 +53,12 @@ const store = {
         const products = store.getProducts();
         products.push(product);
         store.save(PRODUCT_KEY, products);
-    }  
+    },
+    removeProduct(index) {
+        const products = store.getProducts();
+        products.splice(index, 1);
+        store.save(PRODUCT_KEY, products);
+    }
 };
 
 export default store;

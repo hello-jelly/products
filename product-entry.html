@@ -26,37 +26,37 @@
         <h2>ADD NEW ITEM</h2>
 
         <form id="product-form">
-            <p>
+            <fieldset>
                 <label for="code">Code:</label>
                 <input id="code" name="code" type="text" required>
-            </p>
+            </fieldset>
 
-            <p>
+            <fieldset>
                 <label for="name">Name:</label>
                 <input id="name" name="name" type="text" required>
-            </p>
+            </fieldset>
 
-            <p>
+            <fieldset>
                 <label for="image">Upload Image: </label>
                 <input id="image" name="image" type="file" required>
-            </p>
+            </fieldset>
 
-            <p>
+            <fieldset>
                 <label for="price">Price: </label>
                 <input id="price" name="price" type="number" step=".01" required>
-            </p>
+            </fieldset>
 
-            <p>
+            <fieldset>
                 <label for="cost">Cost: </label>
                 <input id="cost" name="cost" type="number" step=".01" required>
-            </p>
+            </fieldset>
 
-            <p>
+            <fieldset>
                 <label for="description">Description: </label>
                 <textarea id="description" name="description" required></textarea>
-            </p>
+            </fieldset>
             
-            <p>
+            <fieldset>
                 <label for="category">Cateory: </label>
                 <select id="category" name="category" required>
                     <option disabled selected hidden>Make A Selection</option>
@@ -64,17 +64,17 @@
                     <option value="apparel">Apparel</option>
                     <option value="other">Other</option>
                 </select>
-            </p>
-
-            <p>
-                Comments: <textarea id="comments" name="comments"></textarea>
-            </p>
+            </fieldset>
             
-            <p>
+            <fieldset>
                 <button>Add New Item</button>
-            </p>
+            </fieldset>
         </form>
     </main>
+    
+    <h2>Product List</h2>
+    <ul id="product-list">
+    </ul>
 
     <script src="src/product-entry.js" type="module"></script>
 </body>

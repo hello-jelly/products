@@ -1,6 +1,7 @@
 import store from '../src/data/store.js';
 
 const productForm = document.getElementById('product-form');
+const productList = document.getElementById('product-list');
 
 productForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -19,8 +20,8 @@ productForm.addEventListener('submit', (event) => {
         };
         
         store.addProduct(product);
-        alert('product saved!');
         productForm.reset();
+        displayProductList();
     });
 });
 
@@ -33,3 +34,19 @@ function getBase64(file, callback) {
         callback(reader.result);
     };
 }
+
+function displayProductList() {
+    const products = store.getProducts();
+    let productsHTML = products.map((product, index) => {
+        return `<li>${product.name} <button onclick="removeProduct(${index})")>X</button></li>`;
+    });
+    productList.innerHTML = productsHTML.join('');
+}
+
+displayProductList();
+
+function removeProduct(index) {
+    store.removeProduct(index);
+    displayProductList();
+}
+window.removeProduct = removeProduct;
