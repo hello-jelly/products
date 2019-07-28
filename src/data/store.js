@@ -35,6 +35,19 @@ const store = {
         }
         return shoppingCart;
     },
+    getShoppingCartCount() {
+        const shoppingCartItems = store.getShoppingCart();
+        let shoppingCartCount = 0;
+        for(let i = 0; i < shoppingCartItems.length; i++) {
+            const shoppingCartItem = shoppingCartItems[i];
+            shoppingCartCount += shoppingCartItem.quantity;
+        }
+        return shoppingCartCount;
+    },
+    udpateCartCount() {
+        const count = document.getElementById('count');
+        count.innerText = store.getShoppingCartCount();
+    },
     orderProduct(code) {
         const shoppingCart = store.getShoppingCart();
         const lineItem = findProduct(shoppingCart, code);
@@ -48,6 +61,7 @@ const store = {
             shoppingCart.push(lineItem);
         }
         store.save(SHOPPING_CART_KEY, shoppingCart);
+        store.udpateCartCount();
     },
     addProduct(product) {
         const products = store.getProducts();

@@ -38,7 +38,7 @@ function getBase64(file, callback) {
 function displayProductList() {
     const products = store.getProducts();
     let productsHTML = products.map((product, index) => {
-        return `<li>${product.name} <button onclick="removeProduct(${index})")>X</button></li>`;
+        return `<li><button onclick="removeProduct(${index})")>X</button> ${product.name}</li>`;
     });
     productList.innerHTML = productsHTML.join('');
 }
@@ -50,3 +50,5 @@ function removeProduct(index) {
     displayProductList();
 }
 window.removeProduct = removeProduct;
+
+store.udpateCartCount();

@@ -13,8 +13,14 @@ thead {
     color: white;
 }
 
-.align left{
+.item {
     text-align: left;
+}
+
+.thumbnail img {
+    max-height: 3rem;
+    margin-right: 1rem;
+    width: auto;
 }
 
 table th, table td {
@@ -49,7 +55,7 @@ p {
     text-align: center;
 }
 
-button {
+.place-button {
     background-color: lightblue;
     box-shadow: 3px 3px 4px darkgray;
     font-family: 'Signika', sans-serif;
@@ -62,4 +68,17 @@ button {
 button:hover {
     box-shadow: 4px 4px 4px gray;
     transform: translate3d(-1px, -1px, 0);
+}
+
+.remove-button {
+    background: url('../assets/trash.png');
+    background-size: cover;
+    border: 0;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+
+.remove-button:hover {
+    box-shadow: none;
 }

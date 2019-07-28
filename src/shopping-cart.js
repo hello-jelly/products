@@ -18,3 +18,5 @@ for(let i = 0; i < shoppingCart.length; i++) {
 const orderTotalCell = document.getElementById('order-total-cell');
 const grandTotal = getOrderTotal(shoppingCart);
 orderTotalCell.innerText = toUSD(grandTotal);
+
+store.udpateCartCount();
