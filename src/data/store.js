@@ -63,6 +63,16 @@ const store = {
         store.save(SHOPPING_CART_KEY, shoppingCart);
         store.udpateCartCount();
     },
+
+    cancelProduct(code) {
+        const shoppingCart = store.getShoppingCart();
+        const item = findProduct(shoppingCart, code);
+        const itemIndex = shoppingCart.indexOf(item);
+        shoppingCart.splice(itemIndex, 1);
+        store.save(SHOPPING_CART_KEY, shoppingCart);
+        store.udpateCartCount();
+    },
+
     addProduct(product) {
         const products = store.getProducts();
         products.push(product);

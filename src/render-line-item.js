@@ -1,5 +1,6 @@
 import { getLineTotal } from './register.js';
 import { toUSD } from './format.js';
+import store from './data/store.js';
 
 function renderLineItem(lineItem, item) {
     const tr = document.createElement('tr');
@@ -35,6 +36,11 @@ function renderLineItem(lineItem, item) {
     removeCell.className = 'remove-cell';
     const removeButton = document.createElement('button');
     removeButton.className = 'remove-button';
+    removeButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        store.cancelProduct(item.code);
+        tr.remove();
+    });
     removeCell.appendChild(removeButton);
     tr.appendChild(removeCell);
 
