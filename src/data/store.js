@@ -49,7 +49,11 @@ const store = {
         }
         store.save(SHOPPING_CART_KEY, shoppingCart);
     },
-    
+    addProduct(product) {
+        const products = store.getProducts();
+        products.push(product);
+        store.save(PRODUCT_KEY, products);
+    }  
 };
 
 export default store;
