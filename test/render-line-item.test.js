@@ -13,7 +13,9 @@ test('renders a line item', assert => {
         quantity: 1
     };
     const lamp = findProduct(items, lineItem.code);
-    const expected = '<tr><td class="align-left">Lamp</td><td>1</td><td>$50.00</td><td class="line-item-total">$50.00</td></tr>';
+    const expected = '<tr><td class="thumbnail"><img src="assets/lamp.png"></td><td class="item">Lamp</td>'
+        + '<td>1</td><td>$50.00</td><td class="line-item-total">$50.00</td><td class="remove-cell">'
+        + '<button class="remove-button"></button></td></tr>';
 
     // act
     const dom = renderLineItem(lineItem, lamp);

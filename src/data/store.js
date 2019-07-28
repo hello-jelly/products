@@ -46,7 +46,8 @@ const store = {
     },
     udpateCartCount() {
         const count = document.getElementById('count');
-        count.innerText = store.getShoppingCartCount();
+        // if element exists, update cart count
+        if(count) count.innerText = store.getShoppingCartCount();
     },
     orderProduct(code) {
         const shoppingCart = store.getShoppingCart();
