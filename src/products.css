@@ -1,6 +1,17 @@
-h2 {
+#sub {
+    display: center;
+    height: 75px;
+    background-color: lightblue;
+    margin-top: -50px;
+    margin-left: -10px;
+    width: 100vw;
+
+}
+
+#subhead {
     text-align: center;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    padding: 20px;
 }
 
 #items {
