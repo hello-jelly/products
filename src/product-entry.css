@@ -3,8 +3,8 @@
     flex-direction: column;
     border-radius: 25px;
     background-color: whitesmoke;
-    width: 70%;
-    margin: 0 auto 50px;
+    width: 50%;
+    margin: 0 auto 30px;
     justify-content: center;
 }
 
@@ -38,6 +38,17 @@ button {
     margin-bottom: 30px;
 }
 
+#minus-product {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    width: 50%;
+    margin: 0 auto 50px;
+    justify-content: center;
+}
+
 ul {
     list-style-type: none;
+    margin-left: 150px;
 }
