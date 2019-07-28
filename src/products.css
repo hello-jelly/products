@@ -1,4 +1,4 @@
-#sub {
+.sub {
     display: center;
     height: 75px;
     background-color: lightblue;
@@ -8,7 +8,7 @@
 
 }
 
-#subhead {
+.subhead {
     text-align: center;
     font-size: 1.5rem;
     padding: 20px;
