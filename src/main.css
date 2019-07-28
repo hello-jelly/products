@@ -20,10 +20,20 @@ nav a {
     justify-content: space-between;
     color: black;
     padding: 2rem;
+    text-decoration: none;
 }
 
 #space {
     margin-right: 100px;
+}
+
+#cart {
+    display: flex;
+    align-items: center;
+}
+
+#cart-img {
+    height: 50px; 
 }
 
 header {
