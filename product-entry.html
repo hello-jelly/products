@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buy Stuff</title>        
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/product-entry.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Poppins|Raleway|Signika&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <a class="user-use" href="./">Home</a>
+        <a class="user-use" href="products.html">Store</a>
+        <a id="space" class="user-use" href="shopping-cart.html">Checkout</a>
+        <a href="product-entry.html">Item Form</a>
+        <a href="sales.html">Sales Reports</a>
+    </nav>
+    <header>
+        <h1><img id="logo" src="assets/logo.png" alt="Logo Image"></h1>
+    </header>
+
+    <main id="frame">
+        <h2>ADD NEW ITEM</h2>
+
+        <form id="product-form">
+            <p>
+                <label for="code">Code:</label>
+                <input id="code" required name="code" type="text">
+            </p>
+
+            <p>
+                <label for="name">Name:</label>
+                <input id="name" required name="name" type="text">
+            </p>
+
+            <p>
+                <label for="image">Upload Image: </label>
+                <input id="image" required name="image" type="file">
+            </p>
+
+            <p>
+                <label for="price">Price: </label>
+                <input id="price" required name="price" type="number" step=".01">
+            </p>
+
+            <p>
+                <label for="cost">Cost: </label>
+                <input id="cost" required name="cost" type="number" step=".01">
+            </p>
+
+            <p>
+                <label for="description">Description: </label>
+                <textarea id="description" name="description" required></textarea>
+            </p>
+            
+            <p>
+                <label for="category">Cateory: </label>
+                <select id="category" required name="category">
+                    <option disabled selected hidden>Make A Selection</option>
+                    <option value="home-decor">Home Decor</option>
+                    <option value="apparel">Apparel</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+
+            <p>
+                Comments: <textarea id="comments" name="comments"></textarea>
+            </p>
+            
+            <p>
+                <button>Add New Item</button>
+            </p>
+        </form>
+    </main>
+
+    <script src="src/productn-entry.js" type="module"></script>
+</body>
+</html>

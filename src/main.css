@@ -5,13 +5,25 @@ html {
 }
 
 nav {
+    display: flex;
     margin-bottom: 15px;
+    background-color: lightsalmon;
+    height: 40px;
+    width: 100vw;
+    margin-left: -8px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
 }
 
 nav a {
     justify-content: space-between;
+    color: black;
     padding: 2rem;
-    text-align: center;
+}
+
+#space {
+    margin-right: 100px;
 }
 
 header {
@@ -21,6 +33,7 @@ header {
     margin-left: -8px;
     text-align: center;
     width: 100vw;
+    margin-bottom: 50px;
 }
 
 img #logo {
@@ -34,7 +47,6 @@ img #logo {
 body {
     font-family: 'Dosis', sans-serif;
     margin-top: 3rem;
-    text-align: center;
 }
 
 h2 {
@@ -43,4 +55,12 @@ h2 {
 
 h3 {
     font-family: 'signika', sans-serif;
+}
+
+#index {
+    text-align: center;
+}
+
+#view-all {
+    color: black;
 }

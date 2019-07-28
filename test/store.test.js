@@ -59,3 +59,19 @@ test('get product by code', (assert) => {
     const item = store.getProduct(code);
     assert.deepEqual(item, expected);
 });
+
+test('add a product', (assert) => {
+    const product = {
+        category: 'other',
+        code: 'suitcase',
+        description: 'stylish for school, work, or travel',
+        image: 'suitcase.png',
+        name: 'Vtg Suitcase',
+        price: 85.00
+    };
+
+    store.addProduct(product);
+    const products = store.getProducts();
+
+    assert.deepEqual(products[products.length - 1], product);
+});
