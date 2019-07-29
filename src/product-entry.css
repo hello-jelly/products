@@ -1,0 +1,54 @@
+#frame {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    width: 50%;
+    margin: 0 auto 30px;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+fieldset {
+    border: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+#description {
+    width: 300px;
+    height: 50px;
+}
+
+#comments {
+    width: 300px;
+    height: 100px;
+}
+
+button {
+    margin-bottom: 30px;
+}
+
+#minus-product {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    width: 50%;
+    margin: 0 auto 50px;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 120px;
+}

@@ -1,0 +1,100 @@
+.sub {
+    display: center;
+    height: 75px;
+    background-color: lightblue;
+    margin-top: -50px;
+    margin-left: -10px;
+    width: 100vw;
+
+}
+
+.subhead {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;    
+    width: 70%;
+}
+
+tbody {
+    background: whitesmoke;
+}
+
+thead {
+    background: black;
+    color: white;
+}
+
+.item {
+    text-align: left;
+}
+
+.thumbnail img {
+    max-height: 3rem;
+    margin-right: 1rem;
+    width: auto;
+}
+
+table th, table td {
+    text-align: left;
+}
+
+table th, table td {
+    text-align: right;
+    padding: 15px;
+}
+
+thead tbody td {
+    padding: 15px;
+}
+
+
+tbody tr:nth-child(even) {
+    background: #eee
+}
+
+.line-item-total {
+    font-weight: bolder;
+}
+
+tfoot {
+    background: black;
+    color: white;
+    font-size: 1.5rem;
+}
+
+p {
+    text-align: center;
+}
+
+.place-button {
+    background-color: lightblue;
+    box-shadow: 3px 3px 4px darkgray;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.5rem;
+    height: 50px;
+    transition: color 200ms ease-in-out;
+    width: 150px;
+}
+
+button:hover {
+    box-shadow: 4px 4px 4px gray;
+    transform: translate3d(-1px, -1px, 0);
+}
+
+.remove-button {
+    background: url('../assets/trash.png');
+    background-size: cover;
+    border: 0;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.remove-button:hover {
+    box-shadow: none;
+}

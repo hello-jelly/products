@@ -1,0 +1,72 @@
+html {
+    background-image: url('../assets/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    margin-bottom: 15px;
+    background-color: lightsalmon;
+    height: 40px;
+    width: 100vw;
+    margin-left: -8px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+nav a {
+    justify-content: space-between;
+    color: black;
+    padding: 2rem;
+    text-decoration: none;
+}
+
+#cart {
+    display: flex;
+    align-items: center;
+}
+
+#cart-img {
+    height: 50px; 
+}
+
+header {
+    background-color: tan;
+    background: rgba(196, 160, 120, 0.6);
+    padding: 1.5rem;
+    margin-left: -8px;
+    text-align: center;
+    width: 100vw;
+    margin-bottom: 50px;
+}
+
+img #logo {
+    height: 250px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    margin-top: 3rem;
+}
+
+h2 {
+    font-family: 'Signika', sans-serif;
+}
+
+h3 {
+    font-family: 'signika', sans-serif;
+}
+
+#index {
+    text-align: center;
+}
+
+#view-all {
+    color: black;
+}
