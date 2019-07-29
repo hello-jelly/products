@@ -34,3 +34,9 @@ export function getOrderTotal(cart) {
     //return to the total order
     return totalOrder;
 }
+
+export function getNetProfit(getLineTotal, cost) {
+    let netTotal = getLineTotal - cost;
+    let profitTotal = parseInt(netTotal);
+    return profitTotal;
+}
